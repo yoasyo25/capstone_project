@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>2017 Tax Act News Coverage</h1>
+<% @articles.each do |article| %>
+  <p><%= link_to article[:headline][:main], article[:web_url] %></p>
+  <% end %>
+
+</div>
