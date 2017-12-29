@@ -26,6 +26,7 @@ module TaxBill2017
     # -- all .rb files in that directory are automatically loaded.
 
     # Don't generate system test files.
+    config.eager_load_paths << "#{Rails.root}/lib"
     config.generators.system_tests = nil
   end
 end
