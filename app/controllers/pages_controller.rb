@@ -9,4 +9,9 @@ class PagesController < ApplicationController
 
     @articles = JSON.parse(response.body, symbolize_names: true)[:response][:docs]
   end
+
+
+  def social_media
+    @tax_reform_tweets = SocialMediaContent.twitter_news
+  end
 end
