@@ -1,5 +1,5 @@
 module PagesHelper
-  def twitter_parser(tweet)
+  def twitter_parser(twitter_obj)
     regex = %r{
       \b
       (
@@ -17,9 +17,18 @@ module PagesHelper
         )
       )
     }ix
+    format_twitter_object = twitter_obj.split(" ")[2..-1].join(", ")
 
-    tweet.gsub(regex) do |url|
+    format_twitter_object.gsub(regex) do |url|
       "<a href='#{url}' target='_blank'>#{url}</a>"
     end.html_safe
+  end
+
+  def user_name_parser(twitter_obj)
+    format_twitter_object = twitter_obj.split(" ")[1]
+  end
+
+  def image_parser(twitter_obj)
+    format_twitter_object = twitter_obj.split(" ")[0]
   end
 end

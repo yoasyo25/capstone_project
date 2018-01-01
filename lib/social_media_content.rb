@@ -6,8 +6,8 @@ module SocialMediaContent
       config.access_token        = ENV["Twitter_ACCESS_TOKEN"]
       config.access_token_secret = ENV["Twitter_ACCESS_SECRET"]
     end
-    client.search("#TaxReform -rt", result_type: 'recent').take(10).collect do |tweet|
-      "#{tweet.user.screen_name}: #{tweet.text}"
+    client.search("#taxreform -rt", result_type: "recent", exclude_replies: true).take(40).collect do |tweet|
+      "#{tweet.user.profile_image_url} #{tweet.user.screen_name} #{tweet.text}"
     end
   end
 end
