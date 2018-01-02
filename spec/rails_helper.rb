@@ -5,6 +5,13 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 require 'capybara/rails'
 require 'support/factory_bot'
+require 'webmock/rspec'
+require 'vcr'
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/cassettes"
+  config.hook_into :webmock
+end
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
