@@ -41,6 +41,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
+    assefa_view_tool (0.1.0)
     autoprefixer-rails (7.1.5)
       execjs
     bindex (0.5.0)
@@ -254,6 +255,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  assefa_view_tool
   bootstrap-sass (~> 3.3, >= 3.3.7)
   capybara
   coffee-rails (~> 4.2)

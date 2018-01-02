@@ -1,7 +1,102 @@
 <div class="container">
-  <h1>2017 Tax Act News Coverage</h1>
-<% @articles.each do |article| %>
-  <p><%= link_to article[:headline][:main], article[:web_url] %></p>
-  <% end %>
+  <h1 align="center" class="home-page"> Tax Cuts and Jobs Act News Coverage</h1>
+
+  <div class="col-md-4">
+    <div class="card card-outline-primary mb-3 text-center">
+      <h3>Liberal News</h3>
+      <div class="news-scrollbar" id="style-1">
+        <div class="force-overflow">
+          <div class="card-block">
+            <% @liberal_news_articles.each do |article| %>
+            <% cache article do %>
+            <% if article.source == "CNBC" || article.source == "Al Jazeera English" || article.source == "Reuters" || article.source =="Axios" %>
+            <blockquote class="card-blockquote news-card">
+              <h4><%= link_to article.headline, article.url %></h4>
+              <p><%= article.article_snippet %></p>
+              <p><small><%= article.source%></small></p>
+            </blockquote>
+            <% end %>
+            <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card card-outline-primary mb-3 text-center">
+      <h3>New York Times</h3>
+      <div class="news-scrollbar" id="style-1">
+        <div class="force-overflow">
+          <div class="card-block">
+            <% @NYT_articles.each do |article| %>
+              <% cache article do %>
+              <blockquote class="card-blockquote news-card">
+                <h4><%= link_to article.headline, article.url %></h4>
+                <p><%= article.article_snippet %></p>
+              </blockquote>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card card-outline-primary mb-3 text-center">
+      <h3>Conservative News</h3>
+      <div class="news-scrollbar" id="style-1">
+        <div class="force-overflow">
+      <div class="card-block">
+
+        <% @wsj_news_articles.each do |wsj| %>
+        <% cache wsj do %>
+          <blockquote class="card-blockquote news-card">
+            <h4><%= link_to wsj.headline, wsj.url %></h4>
+            <p><%= truncate(wsj.article_snippet, length: 200) %></p>
+            <p><small><%= wsj.site %></small></p>
+          </blockquote>
+        <% end %>
+        <% end %>
+
+        <% @fox_news_articles.each do |fox| %>
+          <% cache fox do %>
+          <blockquote class="card-blockquote news-card">
+            <h4><%= link_to fox.headline, fox.url %></h4>
+            <p><%= truncate(fox.article_snippet, length: 200) %></p>
+            <p><small><%= fox.site %></small></p>
+          </blockquote>
+          <% end %>
+        <% end %>
+
+        <% @townhall_news_articles.each do |townhall| %>
+          <% cache townhall do %>
+          <blockquote class="card-blockquote news-card">
+            <h4><%= link_to townhall.headline, townhall.url %></h4>
+            <p><%= truncate(townhall.article_snippet, length: 100) %></p>
+            <p><small><%= townhall.site %></small></p>
+          </blockquote>
+          <% end %>
+        <% end %>
+
+
+        <% @washington_times_articles.each do |washington_time| %>
+          <% cache washington_time do %>
+          <blockquote class="card-blockquote news-card">
+            <h4><%= link_to washington_time.headline, washington_time.url %></h4>
+            <p><%= truncate(washington_time.article_snippet, length: 200) %></p>
+            <p><small><%= washington_time.site %></small></p>
+          </blockquote>
+          <% end %>
+        <% end %>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
 
 </div>
