@@ -24,7 +24,7 @@ p {
     border: solid #52567B 3px;
     background-color: #F5F5F5;
     float: left;
-    height: 500px;
+    height: 650px;
     margin-bottom: 25px;
     margin-left: 10px;
     margin-top: 10px;
@@ -91,4 +91,25 @@ small {
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.tax-cal-page p {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+#tax-table {
+  text-align: center;
+}
+
+.secondary-tax-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.text-append {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 40px;
 }

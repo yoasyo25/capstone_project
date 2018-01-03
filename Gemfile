@@ -46,3 +46,4 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem "figaro"
 gem 'twitter', '~> 6.2'
 gem 'assefa_view_tool'
+gem 'jquery-rails', '~> 4.2', '>= 4.2.2'
