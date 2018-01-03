@@ -11,9 +11,9 @@ class PagesController < ApplicationController
   # def social_media
   #   @tax_reform_tweets = SocialMediaContent.twitter_news
   # end
-
-  def tax_twitter_accounts
-  end
+  #
+  # def tax_twitter_accounts
+  # end
 
   def tax_calculator
   end

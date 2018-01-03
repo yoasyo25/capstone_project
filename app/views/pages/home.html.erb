@@ -66,7 +66,7 @@
           <%# cache fox do %>
           <blockquote class="card-blockquote news-card">
             <h4><%#= link_to fox.headline, fox.url %></h4>
-            <p><%#= truncate(fox.article_snippet, length: 200) %></p>
+            <p><%= truncate(fox.article_snippet, length: 200) %></p>
             <p><small><%#= fox.site %></small></p>
           </blockquote>
           <%# end %>
