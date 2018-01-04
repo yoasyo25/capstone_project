@@ -113,3 +113,22 @@ small {
   font-family: 'Open Sans', sans-serif;
   margin-left: 40px;
 }
+
+#regions_div path {
+  stroke-width:1; /* control the countries borders width */
+  stroke:#6699cc; /* choose a color for the border */
+}
+
+
+
+// #regions_div path:hover {
+//   fill: #01008A;
+// }
+
+#regions_div path:hover {
+  fill: orange;
+}
+
+#regions_div rect:hover {
+  fill: transparent;
+}

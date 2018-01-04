@@ -17,4 +17,7 @@ class PagesController < ApplicationController
 
   def tax_calculator
   end
+
+  def congressional_voting
+  end
 end

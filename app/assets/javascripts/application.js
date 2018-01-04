@@ -13,6 +13,6 @@
 //= require jquery
 //= require rails-ujs
 //= require turbolinks
-//= require NYT_api
 //= require tax_calculator
+//= require congressional_voting
 //= require_tree .
