@@ -2,6 +2,47 @@ $(document).ready(function() {
   let emptyTablePercent = [];
   let emptyTableColors = ["gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray", "gray"]
   taxChart(emptyTablePercent, emptyTableColors);
+  // zeroToTwentoNoSZero()
+
+  // function zeroToTwentoNoSZero() {
+
+      // $('#mainContainer').on('click', '.0-20',function() {
+      //   $(".0-20").toggleClass("clicked20");
+      // });
+      //
+      // if ($("#mainContainer").hasClass("clicked20")) {
+      //   console.log("hi");
+      // }
+      //
+      // $('#mainContainer').on('click', '.no', function() {
+      //   $(".no").toggleClass("clickedNo");
+      // });
+      //
+      //
+      // $('#mainContainer').on('click', '.single', function() {
+      //   $(".single").toggleClass("clickedSingle");
+      // });
+      //
+      // $('#mainContainer').on('click', '.noChild', function() {
+      //   $(".noChild").toggleClass("clickednoChild");
+      // });
+
+      // $('button.0-20, button.no, button.single, button.noChild').click(function() {
+      //
+      //     $(".0-20").toggleClass("clicked");
+      //     $(".no").toggleClass("clicked");
+      //     $(".single").toggleClass("clicked");
+      //     $(".noChild").toggleClass("clicked");
+      //
+      //     if ($(".no").hasClass("clicked") && $(".0-20").hasClass("clicked")) {
+      //       console.log("hi")
+      //     }
+      //
+      // });
+
+
+  // }
+
 
   $('#mainContainer').on('click', '.0-20', function() {
     let zeroToTwentyNoSZero = [0.4, 0.4, 0.4, 0.3, 0.3, 0.3, 0.3, 0.3, -0.1, -0.1]
@@ -107,6 +148,20 @@ $(document).ready(function() {
 
 
 });
+
+function zeroToTwentoNoSZero() {
+    let zeroToTwentyNoSZero = [0.4, 0.4, 0.4, 0.3, 0.3, 0.3, 0.3, 0.3, -0.1, -0.1]
+    let zeroToTwentyNoSZeroCol = ['green', 'green', 'green', 'green', 'green',
+    'green', 'green', 'green','yellow', 'yellow']
+    let zeroToTwentyNoSZeroText = `In 2018, your taxes will go down and your
+    after-tax income will go up 0.4%. Looking to
+    2027, your taxes will go up, pushing your
+    after-tax income down 0.1%.`
+    $(".text-append").empty().append(`<h4>${zeroToTwentyNoSZeroText}</h4>`);
+    taxChart(zeroToTwentyNoSZero, zeroToTwentyNoSZeroCol);
+}
+
+
 
 
 
