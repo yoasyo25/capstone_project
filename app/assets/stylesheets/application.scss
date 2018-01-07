@@ -135,15 +135,9 @@ small {
 }
 
 #regions_div path {
-  stroke-width:1; /* control the countries borders width */
-  stroke:#6699cc; /* choose a color for the border */
+  stroke-width:1;
+  stroke:#6699cc;
 }
-
-
-
-// #regions_div path:hover {
-//   fill: #01008A;
-// }
 
 #regions_div path:hover {
   fill: orange;
@@ -151,4 +145,12 @@ small {
 
 #regions_div rect:hover {
   fill: transparent;
+}
+
+#messages {
+  max-height: 450px;
+  overflow-y: auto;
+  .avatar {
+    margin: 0.5rem;
+  }
 }

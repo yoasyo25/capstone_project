@@ -43,7 +43,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faraday'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-gem "figaro"
+gem 'figaro'
 gem 'twitter', '~> 6.2'
 gem 'assefa_view_tool'
 gem 'jquery-rails', '~> 4.2', '>= 4.2.2'
+gem 'devise'
+gem 'redis', '~> 3.2'

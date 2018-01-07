@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require rails-ujs
-//= require turbolinks
 //= require tax_calculator
 //= require congressional_voting
+//= require cable
+//= require turbolinks
 //= require_tree .

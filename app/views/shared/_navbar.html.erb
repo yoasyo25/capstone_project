@@ -26,10 +26,13 @@
 						<li>
 							<%= link_to "Congressional Voting Record", map_path %>
 						</li>
+						<% if current_user %>
+							<li><%= link_to "Chat", chat_rooms_path %></li>
+						<% end %>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#">Link</a>
+							<%= link_to "Sign Up To Chat", new_user_session_path %>
 						</li>
 					</ul>
 				</div>

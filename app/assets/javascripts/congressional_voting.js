@@ -78,7 +78,6 @@ function initMap() {
       content: location[3]
     });
 
-
   google.maps.event.addListener(marker, 'click', function() {
     if (!marker.open) {
       infowindow.open(map,marker);
@@ -88,8 +87,6 @@ function initMap() {
       marker.open = false;
       }
     });
-
   });
-
 
 }
