@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'tax-twitter-accounts', to: 'pages#tax_twitter_accounts'
   get 'tax-calculator', to: 'pages#tax_calculator'
   get 'map', to: 'pages#congressional_voting'
+  get '/senate/:state', to: 'pages#show'
 end

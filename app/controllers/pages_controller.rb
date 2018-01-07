@@ -20,4 +20,21 @@ class PagesController < ApplicationController
 
   def congressional_voting
   end
+
+  def show
+    state = params[:state].upcase
+    @conn = Faraday.new(url: "https://api.propublica.org") do |faraday|
+      faraday.headers["X-API-Key"] = "yPZmj3qtMYKgno5fFMrOqovonFWXjAVbwWLZ2kzg"
+      faraday.adapter Faraday.default_adapter
+    end
+
+    senators_list = @conn.get("/congress/v1/members/senate/#{state}/current.json")
+
+    results = JSON.parse(senators_list.body, symbolize_names: true)[:results]
+
+    @senators  = results.map do |result|
+        Senator.new(result)
+     end
+
+  end
 end
