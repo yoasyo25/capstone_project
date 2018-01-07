@@ -11,6 +11,8 @@
         <p>YouTube Page <%= link_to "https://www.youtube.com/user/#{senator.facebook_account}" %></p>
         <% if senator.party == "R" && senator.name != "Bob Corker" %>
           <%= image_tag("no.jpg", size: "100x100", :style => "border: 1px solid gray") %>
+        <% elsif senator.name == "Doug Jones"%>
+          <%= image_tag("n_a.jpg", size: "100x100", :style => "border: 1px solid gray") %>
         <% else %>
           <%= image_tag("yes.png", size: "100x100", :style => "border: 1px solid gray") %>
         <% end %>

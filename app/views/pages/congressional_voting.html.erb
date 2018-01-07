@@ -1,95 +1,10 @@
-<div class="col-md-2"></div>
-  <div class="col-md-8">
-    <h4 align="center">Click on a State to See How Your Senator Voted</h4>
-    <div id="map" style="width: 900px; height: 500px;"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["new_google_api"] %>&callback=initMap"></script>
-    <div class="contact-info">
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h4 align="center">Click on a State to See How Your Senator Voted</h4>
+      <div class="map-style" id="map" style="width: 900px; height: 500px;"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["new_google_api"] %>&callback=initMap"></script>
+      </div>
     </div>
   </div>
-  <div class="col-md-2"></div>
-
-<!-- <script type="text/javascript">
-
-  google.charts.load('current', {
-    'packages':['geochart'],
-    'mapsApiKey': 'AIzaSyDg2cyNAid6MWPRGHvlaMcXXOtLkIedhUs'
-  });
-
-  google.charts.setOnLoadCallback(drawRegionsMap);
-
-  function drawRegionsMap() {
-    var data = google.visualization.arrayToDataTable([
-       ['State'],
-          ['Montana'],
-          ['Washington'],
-          ['Oregon'],
-          ['California'],
-          ['New York'],
-          ['Connecticut'],
-          ['Alabama'],
-          ['Idaho'],
-          ['Nevada'],
-          ['Nebraska'],
-          ['Colorado'],
-          ['Arizona'],
-          ['New Mexico'],
-          ['Texas'],
-          ['Louisiana'],
-          ['Oklahoma'],
-          ['Virginia'],
-          ['Kentucky'],
-          ['Illinois'],
-          ['Indiana'],
-          ['Arkansas'],
-          ['Louisiana'],
-          ['Mississippi'],
-          ['Georgia'],
-          ['Florida'],
-          ['Missouri'],
-          ['Iowa'],
-          ['Minnesota'],
-          ['South Dakota'],
-          ['North Dakota'],
-          ['Wyoming'],
-          ['Utah'],
-          ['Illinois'],
-          ['Maine'],
-          ['Vermont'],
-          ['Massachussets'],
-          ['Maryland'],
-          ['Delaware'],
-          ['New Jersey'],
-          ['South Carolina'],
-          ['North Carolina'],
-          ['Michigan'],
-          ['Wisconsin'],
-          ['Kansas'],
-          ['Alaska'],
-          ['Hawaii'],
-          ['Rhode Island'],
-          ['District of Colombia'],
-          ['Ohio'],
-          ['West Virginia'],
-          ['Pennsylvania'],
-          ['Tennessee'],
-          ['New Hampshire']
-       ]);
-
-    var options = {
-        region: 'US',
-        displayMode: 'regions',
-        resolution: 'provinces',
-        defaultColor: '#90EE90',
-    };
-
-    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-    //
-    // var selection = chart.getSelection();
-    // if (selection.length) {
-    //     // var url = data.getValue(selection[0].row, 1);
-    //     // window.open(url);
-    // }
-
-    chart.draw(data, options);
-  } -->
-</script>
+</div>
