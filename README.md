@@ -11,7 +11,7 @@ If you'd like to clone this app for your own purposes:
 Ruby 2.4.2
 Rails 5.1.4
 
-### Database creation
+### Database creationheroku logs --app
 `$ rails db:create`
 `$ rails db:migrate`
 `$ rails db:seed`
