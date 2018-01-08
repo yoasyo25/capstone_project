@@ -14,4 +14,12 @@ class Senator
     @facebook_account = attributes[:facebook_account]
     @youtube = attributes[:youtube_id]
   end
+
+  def self.find_senators(state)
+    results = PropublicaService.find_senators(state)
+
+    results.map do |result|
+      new(result)
+    end
+  end
 end
