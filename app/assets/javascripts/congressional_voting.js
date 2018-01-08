@@ -64,6 +64,9 @@ function initMap() {
   element = document.getElementById("map"),
   map = new google.maps.Map(element, options);
 
+  var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+
+
   locations.forEach(function(location) {
     var marker = new google.maps.Marker({
       position: {
@@ -71,6 +74,7 @@ function initMap() {
         lng: location[2]
       },
       map: map,
+      icon: image,
       url: location[3]
     });
 

@@ -6,8 +6,8 @@
       <div class="card senate-card">
         <h4>Senator <%= senator.name %></h4>
         <p>Party Affiliation: <em><%= senator.party %></em></p>
-        <p>Twitter Account <%= link_to "https://twitter.com/#{senator.twitter_account}" %></p>
-        <p>Facebook <%= link_to "https://www.facebook.com/#{senator.facebook_account}" %></p>
+        <p>Twitter Account: <%= link_to "https://twitter.com/#{senator.twitter_account}" %></p>
+        <p>Facebook: <%= link_to "https://www.facebook.com/#{senator.facebook_account}" %></p>
         <p>YouTube Page <%= link_to "https://www.youtube.com/user/#{senator.facebook_account}" %></p>
         <% if senator.party == "R" && senator.name != "Bob Corker" %>
           <%= image_tag("no.jpg", size: "100x100", :style => "border: 1px solid gray") %>

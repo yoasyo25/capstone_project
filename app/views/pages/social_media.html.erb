@@ -6,15 +6,15 @@
         <div class="scrollbar" id="style-1">
           <div class="force-overflow">
             <div class="card-block card-borer">
-              <%# @tax_reform_tweets.each do |tweet| %>
+              <% @tax_reform_tweets.each do |tweet| %>
               <blockquote class="card-blockquote">
-                <p><%#= image_tag(image_parser tweet) %></p>
+                <p><%= image_tag(image_parser tweet) %></p>
                 <a class="twitter-timeline"
-                href="https://twitter.com/<%#= user_name_parser(tweet) %>" target="_blank">
-                @<%#= user_name_parser(tweet) %></a>
-                <p class="card-text"><%#= twitter_parser tweet %></p>
+                href="https://twitter.com/<%= user_name_parser(tweet) %>" target="_blank">
+                @<%= user_name_parser(tweet) %></a>
+                <p class="card-text"><%= twitter_parser tweet %></p>
               </blockquote>
-              <%# end %>
+              <% end %>
             </div>
           </div>
         </div>

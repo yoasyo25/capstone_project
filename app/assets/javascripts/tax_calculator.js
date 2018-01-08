@@ -77,8 +77,8 @@ $(document).ready(function() {
     $(".text-append").empty().append(`<h4>${TwoTwoFiveFiveZeroZeroYesSZeroText}</h4>`);
     taxChart(TwoTwoFiveFiveZeroZeroYesSZero, TwoTwoFiveFiveZeroZeroYesSZeroCol);
   });
-//Not high SALT and itemizes and files jointly and has one child
 
+  //Not high SALT and itemizes and files jointly and has one child
   $('#mainContainer').on('click', '.500', function() {
     let FiveFiveFiveYesJOne = [3.4, 3.3, 3.3, 3.3, 3.3, 3.3, 3.3, 3.3, -0.2,-0.2,]
     let FiveFiveFiveYesJOneCol = ['green', 'green', 'green', 'green', 'green',
@@ -90,22 +90,6 @@ $(document).ready(function() {
     $(".text-append").empty().append(`<h4>${FiveFiveFiveYesJOneText}</h4>`);
     taxChart(FiveFiveFiveYesJOne, FiveFiveFiveYesJOneCol);
   });
-
-  // high local and state taxes and itemizes and files jointly
-  // $('#mainContainer').on('click', '.225-500', function() {
-  //   let TwoTwoFiveFiveZerZeroNoSZero = [3.8, 3.6, 3.4, 3.2, 3, 2.8, 2.7, 2.5, -0.3, -0.3]
-  //   let TwoTwoFiveFiveZerZeroNoSZeroCol = ['green', 'green', 'green', 'green', 'green',
-  //                                 'green', 'green', 'green', 'yellow', 'yellow']
-  //   let TwoTwoFiveFiveZerZeroNoSZeroText = `In 2018, your taxes will go down and
-  //                                           your after-tax income will go up 3.8%.
-  //                                           Looking to 2027, your taxes will go
-  //                                           up, pushing your after-tax income
-  //                                           down 0.3%.`
-  //   $(".text-append").empty().append(`<h4>${TwoTwoFiveFiveZerZeroNoSZeroText}</h4>`);
-  //   taxChart(TwoTwoFiveFiveZerZeroNoSZero, TwoTwoFiveFiveZerZeroNoSZeroCol);
-  // });
-
-
 });
 
 
