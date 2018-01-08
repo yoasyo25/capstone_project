@@ -1,24 +1,20 @@
-# README
+# Aggregate Information on the 2017 Tax Act
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a Ruby on Rails 5 application that provides aggregate information on the 2017 Tax Act.
 
-Things you may want to cover:
+## For developers
 
-* Ruby version
+If you'd like to clone this app for your own purposes:
 
-* System dependencies
+### Versions
 
-* Configuration
+Ruby 2.4.2
+Rails 5.1.4
 
-* Database creation
+### Database creation
+`$ rails db:create`
+`$ rails db:migrate`
+`$ rails db:seed`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### How to run the test suite
+`$ rspec`
