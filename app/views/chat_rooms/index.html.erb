@@ -1,10 +1,13 @@
 <div class="container">
-  <h1>Chat rooms</h1>
+  <div class="col-md-3"></div>
+    <div class="col-md-6 chat-room-style text-center">
 
-  <p class="lead"><%= link_to 'New chat room', new_chat_room_path, class: 'btn btn-primary' %></p>
+      <h1>Enter an Existing Chat Room</h1>
 
-  <ul>
-    <%= render @chat_rooms %>
-  </ul>
+        <%= render @chat_rooms %>
+      <hr>
+      <p class="lead"><%= link_to 'Create a New Chat Room', new_chat_room_path, class: 'btn btn-primary btn-outline' %></p>
 
+    </div>
+  <div class="col-md-3"></div>
 </div>

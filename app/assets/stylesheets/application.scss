@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 .navbar {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -73,6 +74,7 @@ p {
 small {
     font-size: smaller;
 }
+
 
 .senate-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -153,4 +155,65 @@ small {
   .avatar {
     margin: 0.5rem;
   }
+}
+
+.register-links {
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+.log-in-style {
+  margin-top: 8%;
+  width: 50%;
+  border: 1px solid gray;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-color: #E0E0E0;
+}
+
+.chat-room-style {
+  margin-top: 8%;
+  width: 50%;
+  border: 1px solid gray;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-color: #E0E0E0;
 }

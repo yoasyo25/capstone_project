@@ -1,18 +1,23 @@
 <div class="container">
-  <h1><%= @chat_room.title %></h1>
+  <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1>#<%= @chat_room.title %></h1>
+      <hr>
 
-  <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
-    <%= render @chat_room.messages %>
+      <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
+        <%= render @chat_room.messages %>
+      </div>
+
+
+      <%= form_for @message, url: '#' do |f| %>
+        <div class="form-group">
+          <%= f.label :body, "Message" %>
+          <%= f.text_area :body, class: 'form-control' %>
+          <small class="text-muted">From 2 to 1000 characters</small>
+        </div>
+
+        <%= f.submit "Submit", class: 'btn btn-primary btn-block' %>
+      <% end %>
+    <div class="col-md-2"></div>
   </div>
-
-
-  <%= form_for @message, url: '#' do |f| %>
-    <div class="form-group">
-      <%= f.label :body %>
-      <%= f.text_area :body, class: 'form-control' %>
-      <small class="text-muted">From 2 to 1000 characters</small>
-    </div>
-
-    <%= f.submit "Post", class: 'btn btn-primary btn-lg' %>
-  <% end %>
 </div>
